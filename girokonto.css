@@ -1,0 +1,31 @@
+.timeline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 140px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90px;
+    min-height: 90px;
+    border: 1px solid rgb(255, 136, 0);
+    box-shadow: 5px 5px 10px rgba(255, 136, 0, 0.438);
+    border-radius: 0.5rem;
+    background-color: rgb(4, 37, 66);
+    color: #ccc;
+    transition: 0.6s;
+}
+
+.timeline-item {
+    padding: 10px;
+}
+
+.timeline-container:hover {
+    transform: scale(110%);
+}

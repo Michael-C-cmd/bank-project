@@ -1,0 +1,33 @@
+.jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.job {
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.job h3, .job p, .job button {
+    text-align: center;
+    width: fit-content;
+
+}
+
+.job1 {
+    grid-row: 1 / span 2;
+}
+
+.job3 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.job6 {
+    grid-column: span 2;
+}

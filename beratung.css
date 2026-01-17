@@ -1,0 +1,47 @@
+#beratung-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#beratung {
+    position: relative;
+}
+
+.dropdown-container {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1.25rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(4, 37, 66);
+    gap: 0.8rem;
+    min-width: 200px;
+    z-index: 10;
+}
+
+.dropdown-container a {
+    background-color: rgb(4, 37, 66);
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+    min-width: 200px;
+}
+
+.dropdown-container a:first-child {
+    padding-top: 0.6rem;
+} 
+
+.dropdown-container a:last-child {
+    padding-bottom: 0.6rem;
+}
+
+#beratung-container:hover .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 1rem 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    #beratung-container:hover .dropdown-container {
+        display: none;
+    }
+}

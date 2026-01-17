@@ -1,0 +1,33 @@
+1. Was ist der Unterschied zwischen :hover und :focus?
+:hover macht Effekt(e), wenn man mit der Maus über einem Element ist (ohne
+clicken zu müssen). :focus wird vor allem bei <input> Elementen benuzt
+und verusacht eine vorgegene Änderung wenn man gerade das Input-Feld
+ausfüllt. 
+
+2. Warum verbessern Transitions die UX?
+Sanfter Übergang (Veränderung) von Elementen. Man kann sogar eine
+Zeit einstellen, in der die Änderung passiert und auch die "Funktion",
+wie die Änderung passiert (z.B. schnell am Anfang -> langsam am Ende).
+
+3. Wann darf man ::before verwenden – und wann nicht?
+::before verwendet man, wenn sich um ein Content, der ausschließlich aus
+dekorativen Gründen benutzt worden ist. Keine Textinhalte!
+
+
+Was habe ich gelernt/besser verstanden?
+Heute habe ich gelernt wie pseudo-classes (:hover, :focus, :active)
+funktionieren und das Gefühl dafür vertieft.
+Als komplett neu habe ich gelernt, wie Transitions und Transform
+zusammenhängen und wie man diese richtig einsetzt. Am Ende war es nicht
+mega schwierig, man muss nur wissen, welche property kommt wohin 
+(Transform in das Element nach der Veränderung, Transition vor der
+Veränderung).
+Weiter habe ich zum ersten Mal mit ::before gearbeitet (::after auch
+mal angeguckt). 
+
+Was war schwierig?
+schwierig ist sich zu merken, welche properties bei Transition angewendet
+werden können. Im Notfall kann man dies jedoch immer nachschlagen.
+Weiter verstehe ich immer noch nicht so wirklich, wofür eigentlich
+die pseudo-elemente gut sind und wie man z.B. in meinem Fall die Position
+und die Größe besser anpassen kann...

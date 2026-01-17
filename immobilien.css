@@ -1,0 +1,87 @@
+.immo-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "sidebar item1 item2 item3"
+    "sidebar item1 item2 item3"
+    "sidebar item4 item5 .";
+    gap: 2rem;
+    place-items: center;
+}
+
+.immo-grid-item {
+    height: 200px;
+    width: 300px;
+    opacity: 0.5;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.immo-grid-item:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flex-form {
+    display: flex;
+}
+
+.flex-form label, .flex-form output {
+    align-self: center;
+    padding: 10px;
+}
+
+#filter-nav {
+    grid-area: sidebar;
+}
+
+#immo1 {
+    grid-area: item1;
+}
+
+#immo2 {
+    grid-area: item2;
+}
+
+#immo3 {
+    grid-area: item3;
+}
+
+#immo4 {
+    grid-area: item4;
+}
+
+#immo5 {
+    grid-area: item5;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .immo-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "sidebar item1"
+        "sidebar item2"
+        "sidebar item3"
+        "sidebar item4"
+        "sidebar item5"; 
+        gap: 1rem;
+    }
+
+    .immo-grid-item:hover {
+        opacity: 1;
+        transform: scale(100%);
+}
+
+    #filter-nav {
+        align-self: stretch;
+}
+}
