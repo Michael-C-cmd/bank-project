@@ -83,9 +83,10 @@ input {
     margin-right: 1rem;
 }
 
-input:focus {
+.form__input:focus {
     background-color: var(--sparda-darkBlue);
     color: var(--sparda-orange);
+    font-weight: bold;
 }
 
 textarea:focus {
@@ -266,6 +267,15 @@ footer fieldset {
     height: auto;
 }
 
+.form__input--validation:invalid {
+    border: 1px solid red;
+    color: red;
+}
+
+.form__input--validation:valid {
+    border: 1px solid green;
+}
+
 @media screen and (max-width: 768px) {
     #meinung-div {
         display: flex;
@@ -317,4 +327,16 @@ footer fieldset {
     #kredit-container:hover .tooltip {
        display: none; /* Zeigt Tooltip beim Hovern unter den Kredit-Link */
     }
+}
+
+/* ### BEM ### */
+
+
+.button--primary {
+    cursor: pointer;
+}
+
+.button--primary:hover {
+    font-weight: bold;
+    background-color: var(--sparda-orange);
 }

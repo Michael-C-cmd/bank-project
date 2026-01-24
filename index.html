@@ -38,21 +38,21 @@
     </nav>
 
     <main>
-    <form>
+    <form class="form">
         <h2>Login Online-Banking</h2>
         <fieldset>
             <legend>Logen Sie sich bitte ein:</legend>
             <div class="login">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" autocomplete="off" placeholder="PetraNovakova">
+                <label class="form__label" for="username">Username:</label>
+                <input class="form__input form__input--validation" type="text" id="username" name="username" autocomplete="off" placeholder="PetraNovakova" required>
             </div>
             <div class="login">
-                <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="password" placeholder="123456">
-                <input type="button" value="Password anzeigen" id="pwd-btn">
+                <label class="form__label" for="pwd">Password:</label>
+                <input class="form__input form__input--validation" type="password" id="pwd" name="password" placeholder="123456" required>
+                <input class="button--primary" type="button" value="Password anzeigen" id="pwd-btn">
             </div>
             <div class="login" id="login"> 
-                <input type="button" value="Login" id="login-btn">
+                <input class="button--primary" type="button" value="Login" id="login-btn">
                 <span class="tooltip">Alles ausgefüllt?</span>
             </div>
         </fieldset>
@@ -62,68 +62,68 @@
         </div>
         <div>
             <div id="meinung-div">
-                <textarea name="ihre Meinung" id="meinung" rows="5" cols="60" placeholder="Ihre Nachricht..." autocomplete="off"></textarea>
-                <input id="meinung-btn" type="submit" value="Abschicken!">
+                <textarea class="form__input" name="ihre Meinung" id="meinung" rows="5" cols="60" placeholder="Ihre Nachricht..." autocomplete="off"></textarea>
+                <input class="button--primary" id="meinung-btn" type="submit" value="Abschicken!">
             </div>
         </div>
     </form>
     </main>
+
+    
     <section class="products">
-        <div class="product-description">
-            <h2>Unsere Beratung und Produkte:</h2>
-        </div>
-        <div class="product-cards">
-            <div class="product-card" id="card1">
-              <h3 class="product-card-item">Girokonto</h3>
-              <p class="product-card-item">Kostenlos mit kostenloser Karte und 24/7 Banking.</p>
-              <a href="girokonto.html"><button class="product-card-item">Mehr erfahren</button></a>
+        <h2 class="products__title">Unsere Beratung und Produkte:</h2>
+        <div class="products__cards">
+            <div class="products__card" id="card1">
+              <h3 class="products__card__text products__card__titel">Girokonto</h3>
+              <p class="products__card__text products__card__content">Kostenlos mit kostenloser Karte und 24/7 Banking.</p>
+              <a href="girokonto.html"><button class="products__card__text button--primary">Mehr erfahren</button></a>
             </div>
         
-            <div class="product-card" id="card2">
-              <h3 class="product-card-item">Kredit</h3>
-              <p class="product-card-item">Flexible Laufzeiten und niedrige Zinsen ab 3.99%.</p>
-              <button class="product-card-item">Mehr erfahren</button>
+            <div class="products__card" id="card2">
+              <h3 class="products__card__text products__card__titel">Kredit</h3>
+              <p class="products__card__text products__card__content">Flexible Laufzeiten und niedrige Zinsen ab 3.99%.</p>
+              <button class="products__card__text button--primary">Mehr erfahren</button>
             </div>
 
-            <div class="product-card" id="card3">
-              <h3 class="product-card-item">Sparplan</h3>
-              <p class="product-card-item">Sichere Rendite mit monatlichen Einzahlungen ab 25€.</p>
-              <button class="product-card-item">Mehr erfahren</button>
+            <div class="products__card" id="card3">
+              <h3 class="products__card__text products__card__titel">Sparplan</h3>
+              <p class="products__card__text products__card__content">Sichere Rendite mit monatlichen Einzahlungen ab 25€.</p>
+              <button class="products__card__text button--primary">Mehr erfahren</button>
             </div>
 
-            <div class="product-card" id="card4">
-              <h3 class="product-card-item">Investitionen</h3>
-              <p class="product-card-item">Hohe Rendit-Möglichkeiten in kürzesten Zeit</p>
-              <button class="product-card-item">Mehr erfahren</button>
+            <div class="products__card" id="card4">
+              <h3 class="products__card__text products__card__titel">Investitionen</h3>
+              <p class="products__card__text products__card__content">Hohe Rendit-Möglichkeiten in kürzesten Zeit</p>
+              <button class="products__card__text button--primary">Mehr erfahren</button>
             </div>
 
-            <div class="product-card" id="card5">
-              <h3 class="product-card-item">Familien-Versicherung</h3>
-              <p class="product-card-item">Versichern Sie sich und Ihre nähesten</p>
-              <button class="product-card-item">Mehr erfahren</button>
+            <div class="products__card" id="card5">
+              <h3 class="products__card__text products__card__titel">Familien-Versicherung</h3>
+              <p class="products__card__text products__card__content">Versichern Sie sich und Ihre nähesten</p>
+              <button class="products__card__text button--primary">Mehr erfahren</button>
             </div>
         </div>
     </section>
 
     <section class="featured">
-        <div class="featured-products-description">
+        <div class="featured__description">
             <h2>Unsere Premium Produkte:</h2>
         </div>
-        <div class="featured-products">
-            <div class="featured-product" id="gold">
-                <p class="featured-product-item">Die Nr.1</p>
-                <h3 class="featured-product-item">Golden Card</h3>
-                <button class="featured-product-item">Vorbestellen</button>
+        <div class="featured__products">
+            <div class="featured__product" id="gold">
+                <p class="featured__product__text">Die Nr.1</p>
+                <h3 class="featured__product__text">Golden Card</h3>
+                <button class="button--primary">Vorbestellen</button>
             </div>
-            <div class="featured-product" id="silver">
-                <p class="featured-product-item">Die Nr.2</p>
-                <h3 class="featured-product-item">Silver Card</h3>
-                <button class="featured-product-item">Vorbestellen</button>
+            <div class="featured__product" id="silver">
+                <p class="featured__product__text">Die Nr.2</p>
+                <h3 class="featured__product__text">Silver Card</h3>
+                <button class="button--primary">Vorbestellen</button>
             </div>
-            <div class="featured-product" id="normal">
-                <p class="featured-product-item">Die Nr. Normal</p>
-                <h3 class="featured-product-item">Normal Card</h3>
-                <button class="featured-product-item">Bestellen</button>
+            <div class="featured__product" id="normal">
+                <p class="featured__product__text">Die Nr. Normal</p>
+                <h3 class="featured__product__text">Normal Card</h3>
+                <button class="button--primary">Bestellen</button>
             </div>
         </div>
         

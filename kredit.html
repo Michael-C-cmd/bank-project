@@ -47,11 +47,11 @@
                 <legend>Unser Kreditrechner:</legend>
                 <form oninput="ergebnis.value=parseInt(hohe.value)*parseInt(satz.value)">
                     <label for="hohe">gewünschte Kredithöhe in € : </label>
-                    <input type="number" id="hohe" name="hohe" step="500" value="5000" min="1000" max="1000000" oninput="ergebnis.value=parseInt(hohe.value)*parseFloat(satz.value)">
+                    <input class="form__input form__input--validation" type="number" id="hohe" name="hohe" value="5000" min="1000" max="1000000" oninput="ergebnis.value=parseInt(hohe.value)*parseFloat(satz.value)">
                     <br>
                     <div class="satz-container">
                         <label for="satz">Anzahl Jahre (6-15):</label>
-                        <input type="range" id="satz" name="satz" step="0.1" min="1.1" max="2" oninput="ergebnis.value=parseInt(hohe.value)*parseFloat(satz.value)">
+                        <input class="form__input" type="range" id="satz" name="satz" step="0.1" min="1.1" max="2" oninput="ergebnis.value=parseInt(hohe.value)*parseFloat(satz.value)">
                     </div>
                     <p>Sie zahlen zurück (in €) : </p>
                     <output name="ergebnis" for="hohe satz">5500</output>
@@ -61,8 +61,8 @@
             </fieldset>
             <p>Falls Sie eine persönliche Beratung benötigen, hintelassen Sie uns Ihre E-Mail-Adresse</p>
             <label for="user-mail">Ihre E-Mail-Adresse:</label>
-            <input type="email" id="user-mail" name="user-mail" placeholder="PetraNovakova@gmail.com">
-            <input type="submit" value="Bestätigen" onclick="alert('E-Mail versendet!')">
+            <input class="form__input form__input--validation" type="email" id="user-mail" name="user-mail" placeholder="PetraNovakova@gmail.com">
+            <input class="button--primary form__input" type="submit" value="Bestätigen" onclick="alert('E-Mail versendet!')">
         </form>
     </form>
     </main>

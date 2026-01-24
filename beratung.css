@@ -10,7 +10,7 @@
 .dropdown-container {
     display: none;
     position: absolute;
-    top: calc(100% + 1.25rem);
+    top: calc(100% + 1rem);
     left: 50%;
     transform: translateX(-50%);
     background-color: rgb(4, 37, 66);
