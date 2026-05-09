@@ -18,7 +18,6 @@ console.log(productBtns);
 
 productCard.forEach((product) => {
   product.addEventListener("mouseover", () => {
-    console.log("moused over");
     product.style.backgroundColor = "var(--sparda-darkBlue)";
     product.style.color = "white";
     productBtns.forEach((button) => {
@@ -33,7 +32,6 @@ productCard.forEach((product) => {
     });
   });
   product.addEventListener("mouseout", () => {
-    console.log("moused out");
     product.style.backgroundColor = "var(--sparda-brightBlue)";
     product.style.color = "black";
   });
