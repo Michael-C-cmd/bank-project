@@ -1,189 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sparda Bank-HOME</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bank-produkt-karten.css">
-    <link rel="stylesheet" href="beratung.css">
-    <link rel="stylesheet" href="featured-products.css">
-</head>
-<body id="top">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bank-produkt-karten.css" />
+    <link rel="stylesheet" href="beratung.css" />
+    <link rel="stylesheet" href="featured-products.css" />
+  </head>
+  <body id="top">
     <header>
-        <h1>Sparda Bank</h1>
-        <p id="hallo">Hallo Sparda</p>
+      <h1>Sparda Bank</h1>
+      <p id="hallo">Hallo Sparda</p>
     </header>
     <nav class="nav">
-            <ul id="main-nav">
-                <div class="main-nav-flex" id="home">
-                    <li><a href="index.html">HOME</a></li>
-                </div>
-                <div class="main-nav-flex" id="kredit-container">
-                    <li><a href="kredit.html">KREDIT AUFNEHMEN</a></li>
-                    <span class="tooltip">Unser Zinssatz: 3.99%! **</span>
-                </div>
-                <div id="beratung-container" class="main-nav-flex">
-                    <li id="beratung"><a href="beratung.html">Beratung</a>
-                        <div class="dropdown-container">
-                            <a href="#">Fragen zum Girokonto</a>
-                            <a href="#">Fragen zu Hypothek</a>
-                            <a href="#">Fragen zu Investitionen</a>
-                            <a href="./immobilien.html">Sparda-Immobilien</a>
-                        </div>
-                    </li>
-                </div>
-                <li class="main-nav-flex"><a href="karriere.html">Karriere</a></li>
-            </ul>
+      <ul id="main-nav">
+        <div class="main-nav-flex" id="home">
+          <li><a href="index.html">HOME</a></li>
+        </div>
+        <div class="main-nav-flex" id="kredit-container">
+          <li><a href="kredit.html">KREDIT AUFNEHMEN</a></li>
+          <span class="tooltip">Unser Zinssatz: 3.99%! **</span>
+        </div>
+        <div id="beratung-container" class="main-nav-flex">
+          <li id="beratung">
+            <a href="beratung.html">Beratung</a>
+            <div class="dropdown-container">
+              <a href="#">Fragen zum Girokonto</a>
+              <a href="#">Fragen zu Hypothek</a>
+              <a href="#">Fragen zu Investitionen</a>
+              <a href="./immobilien.html">Sparda-Immobilien</a>
+            </div>
+          </li>
+        </div>
+        <li class="main-nav-flex"><a href="karriere.html">Karriere</a></li>
+      </ul>
     </nav>
 
     <main>
-    <form class="form">
+      <form class="form">
         <h2>Login Online-Banking</h2>
         <fieldset>
-            <legend>Logen Sie sich bitte ein:</legend>
-            <div class="login">
-                <label class="form__label" for="username">Username:</label>
-                <input class="form__input form__input--validation" type="text" id="username" name="username" autocomplete="off" placeholder="PetraNovakova" required>
-            </div>
-            <div class="login">
-                <label class="form__label" for="pwd">Password:</label>
-                <input class="form__input form__input--validation" type="password" id="pwd" name="password" placeholder="123456" required>
-                <input class="button--primary" type="button" value="Password anzeigen" id="pwd-btn">
-            </div>
-            <div class="login" id="login"> 
-                <input class="button--primary" type="button" value="Login" id="login-btn">
-                <span class="tooltip">Alles ausgefüllt?</span>
-            </div>
+          <legend>Logen Sie sich bitte ein:</legend>
+          <div class="login">
+            <label class="form__label" for="username">Username:</label>
+            <input
+              class="form__input form__input--validation"
+              type="text"
+              id="username"
+              name="username"
+              autocomplete="off"
+              placeholder="PetraNovakova"
+              pattern="[A-Za-z]{1,}"
+            />
+          </div>
+          <div class="login">
+            <label class="form__label" for="pwd">Password:</label>
+            <input
+              class="form__input form__input--validation"
+              type="password"
+              id="pwd"
+              name="password"
+              placeholder="123456"
+              pattern=".{8,}"
+              title="mindestens 8 Zeichen"
+            />
+            <input
+              class="button--primary"
+              type="button"
+              value="Password anzeigen"
+              id="pwd-btn"
+            />
+          </div>
+          <div class="login" id="login">
+            <input
+              class="button--primary button--size"
+              type="button"
+              value="Login"
+              id="login-btn"
+            />
+            <span class="login--tooltip">Alles ausgefüllt?</span>
+          </div>
         </fieldset>
         <div>
-            <h2>Ihre Meinung ist und wichtig</h2>
-            <label for="meinung">Schreiben Sie uns:</label>
+          <h2>Ihre Meinung ist und wichtig</h2>
+          <label for="meinung">Schreiben Sie uns:</label>
         </div>
         <div>
-            <div id="meinung-div">
-                <textarea class="form__input" name="ihre Meinung" id="meinung" rows="5" cols="60" placeholder="Ihre Nachricht..." autocomplete="off"></textarea>
-                <input class="button--primary" id="meinung-btn" type="submit" value="Abschicken!">
-            </div>
+          <div id="meinung-div">
+            <textarea
+              class="form__input form__input--size"
+              name="ihre Meinung"
+              id="meinung"
+              rows="5"
+              cols="60"
+              placeholder="Ihre Nachricht..."
+              autocomplete="off"
+            ></textarea>
+            <input
+              class="button--primary"
+              id="meinung-btn"
+              type="submit"
+              value="Abschicken!"
+            />
+          </div>
         </div>
-    </form>
+      </form>
     </main>
 
-    
     <section class="products">
-        <h2 class="products__title">Unsere Beratung und Produkte:</h2>
-        <div class="products__cards">
-            <div class="products__card" id="card1">
-              <h3 class="products__card__text products__card__titel">Girokonto</h3>
-              <p class="products__card__text products__card__content">Kostenlos mit kostenloser Karte und 24/7 Banking.</p>
-              <a href="girokonto.html"><button class="products__card__text button--primary">Mehr erfahren</button></a>
-            </div>
-        
-            <div class="products__card" id="card2">
-              <h3 class="products__card__text products__card__titel">Kredit</h3>
-              <p class="products__card__text products__card__content">Flexible Laufzeiten und niedrige Zinsen ab 3.99%.</p>
-              <button class="products__card__text button--primary">Mehr erfahren</button>
-            </div>
-
-            <div class="products__card" id="card3">
-              <h3 class="products__card__text products__card__titel">Sparplan</h3>
-              <p class="products__card__text products__card__content">Sichere Rendite mit monatlichen Einzahlungen ab 25€.</p>
-              <button class="products__card__text button--primary">Mehr erfahren</button>
-            </div>
-
-            <div class="products__card" id="card4">
-              <h3 class="products__card__text products__card__titel">Investitionen</h3>
-              <p class="products__card__text products__card__content">Hohe Rendit-Möglichkeiten in kürzesten Zeit</p>
-              <button class="products__card__text button--primary">Mehr erfahren</button>
-            </div>
-
-            <div class="products__card" id="card5">
-              <h3 class="products__card__text products__card__titel">Familien-Versicherung</h3>
-              <p class="products__card__text products__card__content">Versichern Sie sich und Ihre nähesten</p>
-              <button class="products__card__text button--primary">Mehr erfahren</button>
-            </div>
+      <h2 class="products__title">Unsere Beratung und Produkte:</h2>
+      <div class="products__cards">
+        <div class="products__card" id="card1">
+          <h3 class="products__card__text products__card__titel">Girokonto</h3>
+          <p class="products__card__text products__card__content">
+            Kostenlos mit kostenloser Karte und 24/7 Banking.
+          </p>
+          <!-- <a href="girokonto.html"> -->
+            <button class="products__card__button products__card__text button--primary">
+              Mehr erfahren
+            </button>
+            <!-- </a> -->
         </div>
+
+        <div class="products__card" id="card2">
+          <h3 class="products__card__text products__card__titel">Kredit</h3>
+          <p class="products__card__text products__card__content">
+            Flexible Laufzeiten und niedrige Zinsen ab 3.99%.
+          </p>
+          <button class="products__card__button products__card__text button--primary">
+            Mehr erfahren
+          </button>
+        </div>
+
+        <div class="products__card" id="card3">
+          <h3 class="products__card__text products__card__titel">Sparplan</h3>
+          <p class="products__card__text products__card__content">
+            Sichere Rendite mit monatlichen Einzahlungen ab 25€.
+          </p>
+          <button class="products__card__button products__card__text button--primary">
+            Mehr erfahren
+          </button>
+        </div>
+
+        <div class="products__card" id="card4">
+          <h3 class="products__card__text products__card__titel">
+            Investitionen
+          </h3>
+          <p class="products__card__text products__card__content">
+            Hohe Rendit-Möglichkeiten in kürzesten Zeit
+          </p>
+          <button class="products__card__button products__card__text button--primary">
+            Mehr erfahren
+          </button>
+        </div>
+
+        <div class="products__card" id="card5">
+          <h3 class="products__card__text products__card__titel">
+            Familien-Versicherung
+          </h3>
+          <p class="products__card__text products__card__content">
+            Versichern Sie sich und Ihre nähesten
+          </p>
+          <button class="products__card__button products__card__text button--primary">
+            Mehr erfahren
+          </button>
+        </div>
+      </div>
     </section>
 
     <section class="featured">
-        <div class="featured__description">
-            <h2>Unsere Premium Produkte:</h2>
+      <div class="featured__description">
+        <h2>Unsere Premium Produkte:</h2>
+      </div>
+      <div class="featured__products">
+        <div class="featured__product" id="gold">
+          <p class="featured__product__text">Die Nr.1</p>
+          <h3 class="featured__product__text">Golden Card</h3>
+          <button class="button--primary">Vorbestellen</button>
         </div>
-        <div class="featured__products">
-            <div class="featured__product" id="gold">
-                <p class="featured__product__text">Die Nr.1</p>
-                <h3 class="featured__product__text">Golden Card</h3>
-                <button class="button--primary">Vorbestellen</button>
-            </div>
-            <div class="featured__product" id="silver">
-                <p class="featured__product__text">Die Nr.2</p>
-                <h3 class="featured__product__text">Silver Card</h3>
-                <button class="button--primary">Vorbestellen</button>
-            </div>
-            <div class="featured__product" id="normal">
-                <p class="featured__product__text">Die Nr. Normal</p>
-                <h3 class="featured__product__text">Normal Card</h3>
-                <button class="button--primary">Bestellen</button>
-            </div>
+        <div class="featured__product" id="silver">
+          <p class="featured__product__text">Die Nr.2</p>
+          <h3 class="featured__product__text">Silver Card</h3>
+          <button class="button--primary">Vorbestellen</button>
         </div>
-        
+        <div class="featured__product" id="normal">
+          <p class="featured__product__text">Die Nr. Normal</p>
+          <h3 class="featured__product__text">Normal Card</h3>
+          <button class="button--primary">Bestellen</button>
+        </div>
+      </div>
     </section>
 
     <footer>
-    <section>
+      <section>
         <h2>Kontakt</h2>
         <form>
-            <fieldset>
-                <legend>Anschrift:</legend>
-                <address id="address-container">
-                    <div class="address" id="address">
-                        <p>Sparda-Bank eG</p>
-                        <p>Berlinerstraße 123</p>
-                        <p>01234 Berlin</p>
-                        <p>Deutschland</p>
-                    </div>
-                    <div class="address" id="contact">
-                        <p>Tel: 0123456789</p>
-                        <p>E-Mail:<a href="sparda@berlin.de" target="_blank"> sparda@berlin.de</a></p>
-                        <p>Fax: wir haben kein Fax alter, es ist 2026!</p>
-                    </div>
-                    <div class="address" id="bankverbindung">
-                        <p>Spardabank e.G</p>
-                        <p>IBAN: DE01 2345 6789 0987 6543 21</p>
-                        <p>BLZ: 2345 6789</p>
-                    </div>
-                </address>
-            </fieldset>
+          <fieldset>
+            <legend>Anschrift:</legend>
+            <address id="address-container">
+              <div class="address" id="address">
+                <p>Sparda-Bank eG</p>
+                <p>Berlinerstraße 123</p>
+                <p>01234 Berlin</p>
+                <p>Deutschland</p>
+              </div>
+              <div class="address" id="contact">
+                <p>Tel: 0123456789</p>
+                <p>
+                  E-Mail:<a href="sparda@berlin.de" target="_blank">
+                    sparda@berlin.de</a
+                  >
+                </p>
+                <p>Fax: wir haben kein Fax alter, es ist 2026!</p>
+              </div>
+              <div class="address" id="bankverbindung">
+                <p>Spardabank e.G</p>
+                <p>IBAN: DE01 2345 6789 0987 6543 21</p>
+                <p>BLZ: 2345 6789</p>
+              </div>
+            </address>
+          </fieldset>
         </form>
-    </section>
+      </section>
 
-    <p>&copy; Sparda-Bank, Berlin 2026</p>
-
+      <p>&copy; Sparda-Bank, Berlin 2026</p>
     </footer>
 
     <a href="#top"><button id="scroll-top" type="button">Nach oben</button></a>
-    
 
-    <script>
-        const pwd = document.getElementById("pwd");
-        const pwdBtn = document.getElementById("pwd-btn");
-
-        const username = document.getElementById("username");
-        const loginBtb = document.getElementById("login-btn");
-
-        pwdBtn.addEventListener("mousedown", () => {
-            pwd.type = "text";
-        });
-
-        pwdBtn.addEventListener("mouseup", () => {
-            pwd.type = "password";
-        });
-
-        loginBtb.addEventListener("click", () => {
-            username.value !== "" && pwd.value !== "" ? 
-            alert("Willkommen bei Sparda!") : 
-            alert("Bitte Username und Password eingeben!"); 
-        });
-    </script>
-</body>
+    <script src="./login.js"></script>
+    <script src="./produkt-karten.js"></script>
+  </body>
 </html>

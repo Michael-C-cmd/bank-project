@@ -206,13 +206,20 @@ fieldset {
 }
 
 #login {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-#login:hover .tooltip {
-    display: block;
+.login--tooltip {
+    visibility: hidden;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.button--primary:hover+.login--tooltip {
+    visibility: visible;
     color: black;
-    font-size: 0.5rem;
 }
 
 #scroll-top {
@@ -228,20 +235,20 @@ fieldset {
 }
 
 #meinung-div {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 #meinung {
     overflow: auto;
+    max-width: 50%;
     max-height: 200px;
     border-radius: 0.5rem;
 }
 
 #meinung-btn {
-    position: absolute;
-    bottom: -1.5rem;
-    right: 0;
-    margin: 1.5rem;
+    max-height: 3rem;
 }
 
 footer fieldset {
@@ -276,15 +283,24 @@ footer fieldset {
     border: 1px solid green;
 }
 
+.form__error {
+    display: none;
+}
+
+.form__input--validation:invalid~.form__error {
+    display: inline-block;
+}
+
 @media screen and (max-width: 768px) {
-    #meinung-div {
-        display: flex;
-    }
     #meinung-btn {
-        position: relative;
+        /* position: relative; */
         width: fit-content;
         height: fit-content;
         align-self: flex-end;
+    }
+
+    .main-nav-flex:hover {
+        transform: none;
     }
 
     #address-container {
@@ -322,10 +338,11 @@ footer fieldset {
 
     #main-nav {
         flex-direction: column;
+
     }
 
     #kredit-container:hover .tooltip {
-       display: none; /* Zeigt Tooltip beim Hovern unter den Kredit-Link */
+       display: none; /* Zeigt Tooltip beim Hovern unter den Kredit-Link nicht */
     }
 }
 
@@ -339,4 +356,8 @@ footer fieldset {
 .button--primary:hover {
     font-weight: bold;
     background-color: var(--sparda-orange);
+}
+
+.button--size {
+    max-width: fit-content;
 }
