@@ -36,22 +36,6 @@ Verwendete Technologien:
 
 Formular-Handling, Passwort-Generator, Produkt-Karten-Interaktion
 
-Projektstruktur (Auszug):
-
-bank-project/
-├── index.html            # Startseite mit Produktübersicht & Premium-Karten
-├── girokonto.html        # Girokonto-Produktseite
-├── kredit.html           # Kredit-Produktseite
-├── immobilien.html       # Immobilien-Angebote
-├── karriere.html         # Karriereseite
-├── beratung.html         # Beratung & Kontakt
-├── newAccount.html       # Registrierung mit Passwort-Generator
-├── style.css             # Globale Stile
-├── [seite].css           # Seiten-/Komponenten-Stiles (u. a. produkt-karten, featured-products)
-├── login.js              # Login-Formular-Logik
-├── newAccount.js         # Registrierungs-Logik
-├── passwordGenerator.js  # Zufalls-Passwort-Generator
-└── produkt-karten.js     # Interaktion der Produkt-Karten
 
 Lernziel & Reflexion:
 
