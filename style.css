@@ -32,10 +32,19 @@ p {
   line-height: 1.6;
 }
 
+#datenschutz,
+#datenschutz:active {
+  color: black;
+}
+
+#datenschutz:hover {
+  color: var(--sparda-orange);
+}
+
 a,
 a:active {
   text-decoration: none;
-  color: #000000;
+  color: #ccc;
 }
 
 a:active {
